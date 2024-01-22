@@ -3,13 +3,8 @@
 ## Date: 22 January 2024
 
 # Load necessary package
-
 library(tidyverse)
 
-
-# Model structure
-
-#![Figure 1. Model Structure](/Users/zmudia/Documents/QMUL Interview/QMUL Interview/Model Structure.png)
 
 # Model characteristics and parameters
 start_age <- 40
