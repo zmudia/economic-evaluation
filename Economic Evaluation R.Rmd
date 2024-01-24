@@ -224,7 +224,7 @@ run_model <- function(parms){
     trace_svr_LS[i,] <- trace_svr_LS[i-1,] %*% transition_matrix_svr[,,i]
     
     trans_svr_PR[,,i] <- trans_svr_PR[,,i-1] * transition_matrix_svr[,,i]
-    trans_svr_LS[,,i] <- trans_svr_LS[,,i-1] * transition_matrix_svr[,,1]
+    trans_svr_LS[,,i] <- trans_svr_LS[,,i-1] * transition_matrix_svr[,,i]
   }
   
   
