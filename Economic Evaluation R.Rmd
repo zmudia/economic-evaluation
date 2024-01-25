@@ -3,9 +3,9 @@ title: "Economic Evaluation R"
 author : "Manzilina Mudia"
 date: "`r Sys.Date()`"
 output:
-  word_document: default
   html_document:
     df_print: paged
+  word_document: default
   pdf_document: default
 header-includes: \usepackage[sfdefault, condensed]{roboto}
 urlcolor: blue
@@ -30,7 +30,7 @@ library(tidyverse)
 
 # Model structure
 
-![Figure 1. Model Structure](/Users/zmudia/Documents/QMUL Interview/QMUL Interview/Model Structure.png)
+![Figure 1. Model Structure](Model Structure.png)
 
 # Model characteristics and parameters
 
@@ -341,7 +341,7 @@ names(det_parms) <- parm_names
 
 # Deterministic model
 det_results <- run_model(det_parms)
-det_results <- round(det_results, 3)
+(det_results <- round(det_results, 3))
 ```
 ```{r ICER plot, fig.align='left'}
 ## Plot
